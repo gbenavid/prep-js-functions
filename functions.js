@@ -12,17 +12,23 @@
  *  functions.
  */
 
+
+//**  #2 Function - add
  var a = 3;
  var b = 2;
  
+function add (number1, number2){
+  return option1 + option2;
+}
+add();
+var sum = add(a,b)
+console.log(sum);
 
-/**
- *  #2
- *  Function - add
- *
- *  This function returns the result of adding `a` and `b` together.
- *  Store this value in a variable named `sum`.
- */
+
+
+
+
+
 
 //option 1: scenic route
 function add(number1, number2){
