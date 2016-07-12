@@ -1,164 +1,45 @@
-/**
- *  Below are some specifications for Functions to be built.
- *
- *  #1
- *  Declare Two Variables
- *     - `a` random Number value
- *     - `b` random Number value
- *
- *  We will be using both of these variables to pass as `parameters` to the
- *  following functions that we will write. Pay close attention to the other
- *  variable names you will create as they will become input to _other_
- *  functions.
- */
-
+//  #1  Declare Two Variables
+var a = 1;
+var b = 1;
 
 //**  #2 Function - add
- var a = 3;
- var b = 2;
- 
 function add (number1, number2){
-  return option1 + option2;
-}
-add();
-var sum = add(a,b)
-console.log(sum);
-
-
-
-
-
-
-
-//option 1: scenic route
-function add(number1, number2){
-  var result = number1 + number2;
-  return result;
-}
-add();
-
-var sum = add(a,b);
-console.log('adding a and b = ', sum);
-
-//option 2: shorter route
-function add(number1, number2){
   return number1 + number2;
 }
-add();
-
 var sum = add(a,b);
-console.log('adding a and b = ', sum);
+console.log(sum);
 
-
-/**
- *  #3
- *  Function - subtract
- *
- *  This function returns the result of subtracting `b` from `a`.
- *  Store this value in a variable named `difference`
- */
-
-//option 1 scenic route
-function subtract(number1, number2){
-  var result = number1 = number2;
-  return result;
-}
-subtract();
-
-var difference = subtract(a,b);
-console.log('subracting a from b = ', difference);
-
-//option 2 shorter route
-function subtract(number1, number2){
+//*#3 Function -
+function subtract (number1,number2){
   return number1 - number2;
 }
-subtract();
-
 var difference = subtract(a,b);
-console.log('subracting a from b = ', difference);
-
-
-/**
- *  #4
- *  Function - multiply
- *
- *  This function returns the result of multiplying `b` by `a`.
- *  Store this value in a variable named `product`
- */
-
-//option 1 scenic route
-function multiply(number1, number2){
-  var result = number1 * number2;
-  return result;
-}
-multiply();
-
-var product = multiply(a,b);
-console.log('multiplying a and b = ', product);
-
-//option 2 shorter route
-function multiply(number1, number2){
+console.log(difference);
+//*  #4
+ function multiply (number1,number2){
   return number1 * number2;
-}
-multiply();
-
-var product = multiply(a,b);
-console.log('multiplying a and b = ', product);
-
-/**
- *  #5
- *  Function - checkDifference
- *
- *  This function accesses the value stored in the `difference`
- *  variable and uses this number to return the string
- *  "My football team lost X times this week", where `X` is the
- *  value stored in `difference`.
- */
-//option 1 scenic route
+ }
+ var product = multiply (a,b);
+ console.log(product);
+//* #5 Function - checkDifference
 function checkDifference(number){
   var result = "My football team lost " + number + " times this week.";
   return result;
-
 }
 checkDifference();
 console.log(checkDifference(difference));
 
-//option 2 shorter route
-function checkDifference(){
-  return "My football team lost " + difference + " times this week.";
-}
-checkDifference();
-console.log(checkDifference());
-
-/**
- *  #6
- *  Function - checkSum
- *
- *  This function checks the value stored at `sum` and
- *  uses that number to print to the screen the phrase
- *  "I CAN ADDZ X NUMBERS"  where `X` is the value
- *  stored in the variable `sum`.
- */
-
-//option 1 scenic route
+//**  #6 Function - checkSum
 function checkSum(number){
+  return "I can add:" + number + "numbers";
+}
   var result = "I CAN ADDZ " + number + " NUMBERS";
   return result;
 }
-checkSum();
 console.log(checkSum(sum));
 
-//option 2 shorter route
-function checkSum(){
-  return "I CAN ADDZ " + sum + " NUMBERS";
-}
-checkSum();
-console.log(checkSum());
+/*#7 Function - checkProduct
 
-/**
- *  #7
- *  Function - checkProduct
- *
  *  This function checks the value stored at `product` and
  *  multiplies it by the number stored at `difference` and
  *  then prints the result to the console.
